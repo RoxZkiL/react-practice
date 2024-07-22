@@ -1,0 +1,12 @@
+body {
+  margin: 0;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

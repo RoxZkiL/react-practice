@@ -1,0 +1,39 @@
+.tw-card-container {
+display: flex;
+align-items: center;
+background-color: #fff;
+color: #fff;
+justify-content: space-between;
+gap: 16px;
+font-size: 1.2rem;
+}
+
+.tw-card-header {
+  display: flex;
+  align-items: center;
+}
+
+.tw-card-header-div {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.tw-card-img {
+  height: 48px;
+  width: 48px;
+  border-radius: 100%;
+}
+
+.tw-card-button {
+  margin-left: 16px;
+  border: 0;
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.tw-card-button.unfollow {
+  background-color: red;
+}
