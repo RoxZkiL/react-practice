@@ -15,6 +15,10 @@ function App() {
       name: "Cristiano Ronaldo",
       userName: "cristiano",
     },
+    {
+      name: "",
+      userName: "",
+    },
   ].map((persona) => ({
     ...persona,
     avatar: `https://unavatar.io/x/${persona.userName}`,
