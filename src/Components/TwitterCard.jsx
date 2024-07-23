@@ -1,8 +1,7 @@
 import { useState } from "react";
 
 /* eslint-disable react/prop-types */
-const TwitterCard = ({ name, userName }) => {
-  const imgSrc = `https://unavatar.io/x/${userName}`;
+const TwitterCard = ({ name, userName, avatar }) => {
   const [isFollowing, setIsFollowing] = useState(true);
 
   function handleClick() {
@@ -12,7 +11,7 @@ const TwitterCard = ({ name, userName }) => {
   return (
     <article className="tw-card-container">
       <header className="tw-card-header">
-        <img alt="card image" src={imgSrc} className="tw-card-img" />
+        <img alt="card image" src={avatar} className="tw-card-img" />
         <div className="tw-card-header-div">
           <strong className="tw-card-name">{name}</strong>
           <span className="tw-card-userName">@{userName}</span>

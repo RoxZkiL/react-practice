@@ -7,12 +7,18 @@ function App() {
       name: "Jesus Matute",
       userName: "RoxZkiL",
     },
-    { name: "Miguel Angel Duran", userName: "midudev" },
+    {
+      name: "Miguel Angel Duran",
+      userName: "midudev",
+    },
     {
       name: "Cristiano Ronaldo",
       userName: "cristiano",
     },
-  ];
+  ].map((persona) => ({
+    ...persona,
+    avatar: `https://unavatar.io/x/${persona.userName}`,
+  }));
 
   return (
     <section className="App">
@@ -21,6 +27,7 @@ function App() {
           key={index}
           name={persona.name}
           userName={persona.userName}
+          avatar={persona.avatar}
         />
       ))}
     </section>
