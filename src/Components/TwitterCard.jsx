@@ -37,7 +37,6 @@ TwitterCard.propTypes = {
   avatar: PropTypes.string,
 };
 
-// Definición de defaultProps
 TwitterCard.defaultProps = {
   name: "Deleted Account",
   userName: "Deleted User Name",
